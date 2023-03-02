@@ -24,8 +24,12 @@ class ctlRouteur{
                 }
             }
             else
-                require "vue/vue_accueil.php";
+                // require "vue/vue_accueil.php";
+                require "vue/gabarit.php";
             
+        }
+        catch (Exception $e){
+            echo $e->getMessage();
         }
     }
 }

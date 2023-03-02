@@ -7,14 +7,14 @@
 </head>
 <body>
   <header>
-    <div><a href="index.php"><h1><?= $header ?></h1></a></div>
-    <div class="menu"><?= $menu ?></div>
+    <div class="menu"><?= config::MENU ?></div>
   </header>
   <main>
-    <?= $contenu ?>
+    
+    <?php require "vue/vue_accueil.php";?> 
   </main>
   <footer>
-    <?= $footer ?>
+    <?= config::FOOTER ?>
   </footer>  
 </body>
 </html>
