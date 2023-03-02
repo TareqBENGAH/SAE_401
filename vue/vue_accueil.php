@@ -1,3 +1,7 @@
+<?php
+$title = "Kaiserstuhl Escape home";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +12,6 @@
 </head>
 <body>
     azertyui
+
 </body>
 </html>
