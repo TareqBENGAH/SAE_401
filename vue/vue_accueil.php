@@ -2,7 +2,7 @@
     <div class="block-1">
         <div>
             <h1>Le plus grand escape game <span>du monde</span></h1>
-            <iframe width="97%" height="315" src="https://www.youtube.com/embed/VLhQo71FOt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe id="video_home" width="97%" height="315" src="https://www.youtube.com/embed/VLhQo71FOt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="block-2">
             <div class="texte-block-1">
@@ -53,7 +53,7 @@
                             Convient aux joueurs confirmés
                         </strong>
                     </div>
-                    <div>
+                    <div class='button_news'>
                         <button class="button_plus">
                             <a>En savoir plus</a>
                         </button>
@@ -61,7 +61,51 @@
                 </div>
             </div>
             <div class="block-avis">
-            <h3>Les derniers avis</h3>
+                <h3>Les derniers avis</h3>
+                <div class="block_slider">   
+                    <img class="arrow_slider arrow_gauche" src="img/slidder/arrow_left.png" alt="icône flèche gauche">
+                    <div id="slider">
+                        
+                        <div class="slider-parent">
+                            <div class="slide">
+                                <div class="block-reviews-star">
+                                    <div class="etoile">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_vide.png" alt="étoile vide avis">
+                                    </div>
+                                    <p>Julie Lamome</p>
+                                </div>
+                                <div class="desc_reviews">
+                                    <p>
+                                        J’ai fait Kredo Castello et j’ai adoré avec la famille ! Nous cherchions de nouvelles choses à faire en famille et nous avons été servi ! Nous allons revenir à la prochaine réunion de famille c’est sûr.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="block-reviews-star">
+                                    <div class="etoile">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_pleine.png" alt="étoile avis">
+                                        <img src="img/reviews/etoile_vide.png" alt="étoile vide avis">
+                                    </div>
+                                    <p>Julie Lagosse</p>
+                                </div>
+                                <div class="desc_reviews">
+                                    <p>
+                                        J’ai fait Kredo Castello et j’ai adoré avec la famille ! Nous cherchions de nouvelles choses à faire en famille et nous avons été servi ! Nous allons revenir à la prochaine réunion de famille c’est sûr.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <img class="arrow_slider arrow_droite" src="img/slidder/arrow_right.png" alt="icône flèche droite">
+                </div>
             </div>
         </div>
         <div class="block-popular">
@@ -107,7 +151,7 @@
         <h3>Team Building</h3>
         <div class="block-5-1">
             <img src="img/kredo/home_2.png" alt="">
-            <div>
+            <div class="text-block-team-building">
                 <p>
                     Notre Escape Game en extérieur est également une excellente activité de team building pour les entreprises et les organisations. Les jeux sont conçus pour encourager la communication, la coopération et la résolution de problèmes en groupe.
                 </p>
