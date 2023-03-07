@@ -1,6 +1,22 @@
 <?php
 
+
+require "ctlPage.class.php";
+require "ctlClient.class.php";
+
 class ctlRouteur{
+
+    private $ctlEscGame;
+  private $ctlClient;
+  private $ctlResa;
+  private $ctlCPage;
+
+  public function __construct(){
+    $this->ctlClient = new ctlClient();
+    $this->ctlArticle = new ctlArticle();
+    $this->ctlCommande = new ctlCommande();
+    $this->ctlPage = new ctlPage();
+  }
 
     public function Routage(){
         try{
@@ -18,6 +34,18 @@ class ctlRouteur{
                     case "contact":
                         require "vue/vue_contact.php";
                         break;
+                    case "client" : //affichage de la page d'infos client
+                        if(isset("connect")){ //vérification si le visiteur est connecté
+                            if(isset($GET_['id_client'])){//vérif que l'id client passé en paramètre soit bien un integer (protection contre injection)
+                                $id_client = (int)$GET_['id_client'];
+                                if($id_client>0)
+                                $this-> ctrClient -> client($id_client);//affichage de la vue
+                            }
+                        }else{// si pas connecté affichage de la page de connection
+                            $this -> ctlPage-> connection();
+                        }
+                        break;
+                        
                     default:
                         require "vue/vue_accueil.php";
                         break;
