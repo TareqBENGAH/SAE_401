@@ -10,7 +10,19 @@
     <div class="header_logo">
       <img src="img/header/logo_header.png" alt="Kaiserstuhl escape logo">
     </div>
-    <div class="menu"><?= config::MENU ?></div>
+    <div class="header-selector">
+      <div class="header-langue">
+        <a href="">
+          <img src="img/header/la-france.png" alt="Drapeau français">
+        </a>
+        <a href="">
+          <img src="img/header/royaume-uni.png" alt="Drapeau Royaume-Uni">
+        </a>
+        
+      </div>
+      
+      <div class="menu"><?= config::MENU ?></div>
+    </div>
   </header>
   <main>
     
