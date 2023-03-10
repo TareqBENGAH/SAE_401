@@ -34,16 +34,53 @@
                         <span>Fantastique</span>
                     </p>
                 </div>
-                <div>
+                <div class="caract_aventure">
                     <div>
                         <img src="img/icons/Clock.png" alt="Icône durée">
                         <p>Durée : 2 heures | environ 2,5 km</p>
                     </div>
                     <div>
                         <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
                     </div>
                 </div>
-                <p>
+                <p class="dif_aventure">
+                    <span>
+                        Convient aux joueurs débutants
+                    </span>
+                </p>
+                <div class="button_ensavoir">
+                    <button class="button_plus">
+                            <a>En savoir plus</a>
+                    </button>
+                </div>
+            </div>
+            <div class="block_aventure">
+                <h3>Kredo Castello</h3>
+                <img src="img/kredo/kredo.png" alt="Image escape game Kredo">
+                <div class="genre_aventure">
+                    <p>
+                        Genre :
+                    </p>
+                    <p>
+                        <span>Fantastique</span>
+                    </p>
+                </div>
+                <div class="caract_aventure">
+                    <div>
+                        <img src="img/icons/Clock.png" alt="Icône durée">
+                        <p>Durée : 2 heures | environ 2,5 km</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
+                    </div>
+                </div>
+                <p class="dif_aventure">
                     <span>
                         Convient aux joueurs débutants
                     </span>
@@ -55,12 +92,159 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div id="aventure_debutant">
         <h2>Les aventures pour les plus novices</h2>
+        <div class="block_trio_aventure">
+            <div class="block_aventure">
+                <h3>Kredo Castello</h3>
+                <img src="img/kredo/kredo.png" alt="Image escape game Kredo">
+                <div class="genre_aventure">
+                    <p>
+                        Genre :
+                    </p>
+                    <p>
+                        <span>Fantastique</span>
+                    </p>
+                </div>
+                <div class="caract_aventure">
+                    <div>
+                        <img src="img/icons/Clock.png" alt="Icône durée">
+                        <p>Durée : 2 heures | environ 2,5 km</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
+                    </div>
+                </div>
+                <p class="dif_aventure">
+                    <span>
+                        Convient aux joueurs débutants
+                    </span>
+                </p>
+                <div class="button_ensavoir">
+                    <button class="button_plus">
+                            <a>En savoir plus</a>
+                    </button>
+                </div>
+            </div>
+            <div class="block_aventure">
+                <h3>Kredo Castello</h3>
+                <img src="img/kredo/kredo.png" alt="Image escape game Kredo">
+                <div class="genre_aventure">
+                    <p>
+                        Genre :
+                    </p>
+                    <p>
+                        <span>Fantastique</span>
+                    </p>
+                </div>
+                <div class="caract_aventure">
+                    <div>
+                        <img src="img/icons/Clock.png" alt="Icône durée">
+                        <p>Durée : 2 heures | environ 2,5 km</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
+                    </div>
+                </div>
+                <p class="dif_aventure">
+                    <span>
+                        Convient aux joueurs débutants
+                    </span>
+                </p>
+                <div class="button_ensavoir">
+                    <button class="button_plus">
+                            <a>En savoir plus</a>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="aventure_confirmée">
         <h2>Les aventures pour les plus confirmés</h2>
+        <div class="block_trio_aventure">
+            <div class="block_aventure">
+                <h3>Kredo Castello</h3>
+                <img src="img/kredo/kredo.png" alt="Image escape game Kredo">
+                <div class="genre_aventure">
+                    <p>
+                        Genre :
+                    </p>
+                    <p>
+                        <span>Fantastique</span>
+                    </p>
+                </div>
+                <div class="caract_aventure">
+                    <div>
+                        <img src="img/icons/Clock.png" alt="Icône durée">
+                        <p>Durée : 2 heures | environ 2,5 km</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
+                    </div>
+                </div>
+                <p class="dif_aventure">
+                    <span>
+                        Convient aux joueurs débutants
+                    </span>
+                </p>
+                <div class="button_ensavoir">
+                    <button class="button_plus">
+                            <a>En savoir plus</a>
+                    </button>
+                </div>
+            </div>
+            <div class="block_aventure">
+                <h3>Kredo Castello</h3>
+                <img src="img/kredo/kredo.png" alt="Image escape game Kredo">
+                <div class="genre_aventure">
+                    <p>
+                        Genre :
+                    </p>
+                    <p>
+                        <span>Fantastique</span>
+                    </p>
+                </div>
+                <div class="caract_aventure">
+                    <div>
+                        <img src="img/icons/Clock.png" alt="Icône durée">
+                        <p>Durée : 2 heures | environ 2,5 km</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/GeoAlt.png" alt="Icône localisation">
+                        <p>
+                            à Ihringen am Kaiserstuhl
+                        </p>
+                    </div>
+                </div>
+                <p class="dif_aventure">
+                    <span>
+                        Convient aux joueurs débutants
+                    </span>
+                </p>
+                <div class="button_ensavoir">
+                    <button class="button_plus">
+                            <a>En savoir plus</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="futur_escape">
+        <h2>Escape game à venir</h2>
+        <div>
+            <h3>23 Mai 2023</h3>
+            <img src="img/page_aventures/new_escape.png" alt="">
+        </div>
+
     </div>
 </div>

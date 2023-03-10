@@ -38,6 +38,11 @@ p {
   text-align: justify;
 }
 
+header {
+  height: 12vh;
+  position: fixed;
+}
+
 header .header_logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +172,10 @@ footer .footer_copyright p {
   font-size: 20px;
   text-align: right;
   padding-right: 8%;
+}
+
+#home {
+  padding-top: 12vh;
 }
 
 #home h2 {
@@ -370,6 +379,10 @@ footer .footer_copyright p {
   width: 100%;
 }
 
+#aventures {
+  padding-top: 12vh;
+}
+
 #aventures h2 {
   background-color: #AA8773;
   color: white;
@@ -419,6 +432,7 @@ footer .footer_copyright p {
   border: #3E3535 5px solid;
   border-radius: 5px;
   padding: 5%;
+  margin: 2%;
 }
 
 #aventures .block_trio_aventure .block_aventure img {
@@ -430,7 +444,7 @@ footer .footer_copyright p {
   width: 40%;
   border: #3E3535 5px solid;
   border-radius: 5px;
-  background-color: #F3A93E;
+  background-color: white;
   margin-right: auto;
   margin-left: auto;
 }
@@ -446,6 +460,28 @@ footer .footer_copyright p {
   font-weight: bolder;
 }
 
+#aventures .block_trio_aventure .block_aventure .caract_aventure div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aventures .block_trio_aventure .block_aventure .caract_aventure div img {
+  width: 40%;
+}
+
+#aventures .block_trio_aventure .block_aventure .dif_aventure {
+  text-align: center;
+}
+
+#aventures .block_trio_aventure .block_aventure .dif_aventure span {
+  font-weight: bolder;
+}
+
 #aventures .block_trio_aventure .block_aventure .button_ensavoir {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,6 +489,26 @@ footer .footer_copyright p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#aventures .block_trio_aventure .block_aventure .button_ensavoir a {
+  font-size: 48px;
+}
+
+#aventures #futur_escape div {
+  border: #3E3535 5px solid;
+  border-radius: 5px;
+  padding: 5%;
+  margin: 2%;
+}
+
+#aventures #futur_escape div h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#aventures #futur_escape div img {
+  width: 100%;
 }
 
 @-webkit-keyframes slider_animation {
@@ -491,6 +547,9 @@ footer .footer_copyright p {
   }
   h1 span {
     font-size: 90px;
+  }
+  header {
+    position: initial;
   }
   header .header_logo {
     display: -webkit-box;
@@ -605,6 +664,10 @@ footer .footer_copyright p {
     font-size: initial;
     text-align: initial;
     padding-right: 0;
+  }
+  #home,
+  #aventures {
+    padding-top: 6vh;
   }
   #home .block-1,
   #aventures .block-1 {
@@ -821,24 +884,37 @@ footer .footer_copyright p {
   #aventures .block-5 .block-5-1 .text-block-team-building {
     margin-right: 4%;
   }
-  #aventure h2 {
+  #aventures h2 {
     background-color: #AA8773;
     color: white;
     padding: 1%;
     font-size: 24px;
   }
-  #aventure .block_trio_aventure {
+  #aventures h3 {
+    font-size: 50px;
+  }
+  #aventures .block_trio_aventure {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     margin: 2%;
   }
-  #aventure .block_trio_aventure .block_aventure {
+  #aventures .block_trio_aventure .block_aventure {
     border: #3E3535 5px solid;
     border-radius: 5px;
     padding: 2%;
     margin-right: 2%;
+  }
+  #aventures .block_trio_aventure .block_aventure .genre_aventure p {
+    font-size: 24px;
+  }
+  #aventures .block_trio_aventure .block_aventure .button_ensavoir a {
+    font-size: 30px;
+  }
+  #aventures #futur_escape div {
+    padding: 7%;
+    margin: 7%;
   }
   @-webkit-keyframes slider_animation {
     0% {

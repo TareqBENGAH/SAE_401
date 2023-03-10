@@ -45,6 +45,8 @@ p{
 }
 
 header{
+    height: 12vh;
+    position: fixed;
     .header_logo{
         display: flex;
         img{
@@ -142,6 +144,7 @@ footer{
 }
 
 #home{
+    padding-top: 12vh;
     h2{
         font-family: $ultra;
         font-size: 100px;
@@ -302,6 +305,7 @@ footer{
 }
 
 #aventures{
+    padding-top: 12vh;
     h2{
         background-color: $rose;
         color: white;
@@ -342,6 +346,7 @@ footer{
             border: $gris 5px solid;
             border-radius: 5px;
             padding: 5%;
+            margin: 2%;
             img{
                 width: 100%;
             }
@@ -350,7 +355,7 @@ footer{
                 width: 40%;
                 border: $gris 5px solid;
                 border-radius: 5px;
-                background-color: $jaune;
+                background-color: white;
                 margin-right: auto;
                 margin-left: auto;
                 p{
@@ -363,9 +368,44 @@ footer{
                     }
                 }
             }
+            .caract_aventure{
+                div{
+                    display: grid;
+                    grid-template-columns: 20% auto;
+                    align-items: center;
+                    img{    
+                        width: 40%;
+                    }
+                }       
+            }
+            .dif_aventure{
+                text-align: center;
+                span{
+                    font-weight: bolder;
+                }
+            }
+                
             .button_ensavoir{
                 display: flex;
                 justify-content: center;
+                a{
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+    #futur_escape{
+        div{
+            border: $gris 5px solid;
+            border-radius: 5px;
+            padding: 5%;
+            margin: 2%;
+            h3{
+                text-transform: uppercase;
+                text-align: center;
+            }
+            img{
+                width: 100%;
             }
         }
     }
@@ -394,6 +434,7 @@ footer{
     }
 
     header{
+        position: initial;
         .header_logo{
             display: flex;
             img{
@@ -488,6 +529,7 @@ footer{
 
     #home,
     #aventures{
+        padding-top: 6vh;
         .block-1{
             display: grid;
             grid-template-columns: 50% 50%;
@@ -647,12 +689,15 @@ footer{
         }
     }
 
-    #aventure{
+    #aventures{
         h2{
             background-color: $rose;
             color: white;
             padding: 1%;
             font-size: 24px;
+        }
+        h3{
+            font-size: 50px;
         }
         .block_trio_aventure{
             display: grid;
@@ -663,6 +708,22 @@ footer{
                 border-radius: 5px;
                 padding: 2%;
                 margin-right: 2%;
+                .genre_aventure{
+                    p{
+                        font-size: 24px;
+                    }
+                }
+                .button_ensavoir{
+                    a{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        #futur_escape{
+            div{
+                padding: 7%;
+                margin: 7%;
             }
         }
     }
