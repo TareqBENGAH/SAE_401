@@ -1,6 +1,6 @@
 <?php
 
-require "vue/vue.class.php";
+require_once "vue/vue.class.php";
 
 class ctlClient{
 
@@ -23,7 +23,7 @@ class ctlClient{
      ********************************************/
     public function client($id_client){
         $client_infos_perso = $this -> client->getClient($id_client);
-        $client_resa = $this -> client ->getClientResa($id_client)
+        $client_resa = $this -> client ->getClientResa($id_client);
         $vue = new vue("client");
         $vue->afficher(array("client"=>$client_infos_perso,"resa"=>$client_resa));
 

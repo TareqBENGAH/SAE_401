@@ -2,11 +2,13 @@
 
 
 require "ctlPage.class.php";
-// require "ctlClient.class.php";
+require "ctlClient.class.php";
+require "ctlAventure.class.php";
 
 class ctlRouteur
 {
 
+    private $
     private $ctlEscGame;
     private $ctlClient;
     private $ctlResa;
@@ -14,10 +16,10 @@ class ctlRouteur
 
     public function __construct()
     {
-        // $this->ctlClient = new ctlClient();
-        // $this->ctlArticle = new ctlArticle();
-        // $this->ctlCommande = new ctlCommande();
-        // $this->ctlPage = new ctlPage();
+        $this->ctlClient = new ctlClient();
+        $this->ctlEscGame = new ctlAventure();
+        $this->Ctlresa = new CtlResa();
+        $this->ctlPage = new ctlPage();
     }
 
     public function Routage()
@@ -25,11 +27,15 @@ class ctlRouteur
         try {
             if (isset($_GET["action"])) {
                 switch ($_GET["action"]) {
+
+                    case 'paiement':
+                        
                     case "aventures":
-                        require "vue/vue_aventure.php";
+                        // require "vue/vue_aventure.php";
+                        $this->ctlEscGame->aventure_list();
                         break;
                     case "cadeaux":
-                        require "vue/vue_cadeaux.php";
+                        $this
                         break;
                     case "faq":
                         require "vue/vue_faq.php";
