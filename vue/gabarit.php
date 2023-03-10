@@ -20,13 +20,20 @@
         </a>
         
       </div>
-      
-      <div class="menu"><?= config::MENU ?></div>
+      <div class="menu_icon_mobile">
+        <img src="img/header/icon_menu.svg" alt="icône de menu">
+      </div>
+      <div class="block_menu_mobile">
+        <div class="menu"><?= config::MENU ?></div>
+      </div>
+      <div class="block_menu_ordi">
+        <div class="menu"><?= config::MENU ?></div>
+      </div>
     </div>
   </header>
   <main>
     
-    <?php require "vue/vue_accueil.php";?> 
+    <?php require "vue/vue_aventures.php";?> 
   </main>
   <footer>
     <div class="footer_navigation">
@@ -37,5 +44,6 @@
       <p>Les 3 Pélos@</p>
     </div>
   </footer>  
+  <script src="js/custom.js"></script>
 </body>
 </html>
