@@ -8,7 +8,7 @@ require "ctlAventure.class.php";
 class ctlRouteur
 {
 
-    private $
+    
     private $ctlEscGame;
     private $ctlClient;
     private $ctlResa;
