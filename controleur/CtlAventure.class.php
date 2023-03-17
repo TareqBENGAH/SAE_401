@@ -1,6 +1,7 @@
 <?php
 
 require_once "vue/vue.class.php";
+require_once "modele/escGame.class.php";
 
 class CtlAventure{
     private $aventure;
@@ -11,6 +12,7 @@ class CtlAventure{
 
     public function aventure_list(){
         $aventure_total=$this->aventure->getEscGames();
+        var_dump($aventure_total);
         $vue=new vue("aventures");
         $vue->afficher(array($aventure_total));
     }

@@ -14,9 +14,10 @@ class EscGame extends database {
       [array] : Tableau associatif contenant la liste des clients
   *******************************************************/
   public function getEscGames() {
-     $req = 'SELECT id_client AS "N° Client", nom AS "NOM", prenom AS "Prénom", adresse AS "Adresse", ville AS "Ville", mail AS "Adresse email", age AS "Age" FROM esc_game ORDER BY nom, prenom;';
+     $req = 'SELECT * FROM game;';
     // $req = 'SELECT id_client AS "N° Client", nom AS "NOM", prenom AS "Prénom" FROM client ORDER BY nom, prenom;';
     $clients = $this->execReq($req);
+    
     return $clients;
   }
 

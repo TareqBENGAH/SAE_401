@@ -39,6 +39,7 @@ CREATE TABLE `booking` (
   `resa_horaire` int(11) DEFAULT NULL,
   `id_user` int(11) DEFAULT NULL,
   `resa_idgame` int(11) DEFAULT NULL
+  -- résa_nombre de perosnne à ajouter --
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
 
 -- --------------------------------------------------------
@@ -220,6 +221,14 @@ ALTER TABLE `review`
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
+
+
+
+
+/******* AJOUTER UNE TABLE PRIX LIE AU NOMBRE DE PERSONNE DE LA RESERAVTION *******/ 
+
+
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

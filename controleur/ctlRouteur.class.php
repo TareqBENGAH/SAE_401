@@ -9,19 +9,36 @@ class ctlRouteur
 {
 
     
+
+
     private $ctlEscGame;
     private $ctlClient;
-    private $ctlResa;
     private $ctlCPage;
 
+
+
+    //*******
+    //Initialisation des Class Modele pour chaque action
+    //Entrée : 
+    //      [vide]
+    //Sortie : 
+    //      [variables initialisées en tant qu'objet]
+    //******/
     public function __construct()
     {
         $this->ctlClient = new ctlClient();
         $this->ctlEscGame = new ctlAventure();
-        $this->Ctlresa = new CtlResa();
         $this->ctlPage = new ctlPage();
     }
 
+
+    //*******
+    //Routage à partir des actions réalisées passées en paramètre dans l'url 
+    //Entrée : 
+    //      [vide]
+    //Sortie : 
+    //      [affichage des pages demandées ou de la page d'accueil]
+    //******/
     public function Routage()
     {
         try {
@@ -35,7 +52,7 @@ class ctlRouteur
                         $this->ctlEscGame->aventure_list();
                         break;
                     case "cadeaux":
-                        $this
+                        
                         break;
                     case "faq":
                         require "vue/vue_faq.php";
