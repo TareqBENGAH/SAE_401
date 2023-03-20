@@ -7,9 +7,16 @@
 -- Version du serveur : 5.7.33
 -- Version de PHP : 7.4.27
 
+drop database IF exists `sae_401`;
+create database sae_401;
+use sae_401;
+
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18,7 +25,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `sae_402`
+-- Base de données : `sae_401`
 --
 
 -- --------------------------------------------------------
@@ -32,7 +39,7 @@ CREATE TABLE `booking` (
   `resa_horaire` int(11) DEFAULT NULL,
   `id_user` int(11) DEFAULT NULL,
   `resa_idgame` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
 
 -- --------------------------------------------------------
 
@@ -67,7 +74,9 @@ CREATE TABLE `game` (
   `game_nomeng` varchar(50) DEFAULT NULL,
   `game_description` text,
   `game_decriptioneng` text,
-  `game_prix` float DEFAULT NULL
+  `game_prix` float DEFAULT NULL,
+  `game_parcours`float DEFAULT NULL,
+  `game_nbenigme` tinyint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -111,10 +120,30 @@ CREATE TABLE `user` (
   `user_mail` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+
+
+CREATE TABLE IF NOT EXISTS transaction (
+    trans_id INT AUTO_INCREMENT,
+    trans_idclient TINYINT,
+    trans_date DATE
+);
+
+CREATE TABLE IF NOT EXISTS ligne_transa (
+    ligne_idtrans VARCHAR(50),
+    ligne_idgame TINYINT,
+    ligne_idquantite INT
+);
 --
 -- Index pour les tables déchargées
 --
 
+ALTER TABLE `transaction`
+  ADD PRIMARY KEY (`id_trans`);
+
+
+ALTER TABLE `ligne`
+  ADD PRIMARY KEY (`trans_id`, `trans_idclient`);
 --
 -- Index pour la table `booking`
 --
