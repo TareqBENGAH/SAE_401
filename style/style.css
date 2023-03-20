@@ -666,11 +666,13 @@ footer .footer_copyright p {
     padding-right: 0;
   }
   #home,
-  #aventures {
+  #aventures,
+  #cadeau {
     padding-top: 6vh;
   }
   #home .block-1,
-  #aventures .block-1 {
+  #aventures .block-1,
+  #cadeau .block-1 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
@@ -679,7 +681,8 @@ footer .footer_copyright p {
     padding: 2%;
   }
   #home .block-1 .block-2,
-  #aventures .block-1 .block-2 {
+  #aventures .block-1 .block-2,
+  #cadeau .block-1 .block-2 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
@@ -687,15 +690,18 @@ footer .footer_copyright p {
     margin-left: 2%;
   }
   #home .block-1 .block-2 p,
-  #aventures .block-1 .block-2 p {
+  #aventures .block-1 .block-2 p,
+  #cadeau .block-1 .block-2 p {
     text-align: justify;
   }
   #home .block-1 .block-2 .text-block-2,
-  #aventures .block-1 .block-2 .text-block-2 {
+  #aventures .block-1 .block-2 .text-block-2,
+  #cadeau .block-1 .block-2 .text-block-2 {
     margin-left: 4%;
   }
   #home .block-3,
-  #aventures .block-3 {
+  #aventures .block-3,
+  #cadeau .block-3 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 55% 45%;
@@ -703,48 +709,57 @@ footer .footer_copyright p {
     margin: 2%;
   }
   #home .block-3 .block-3-1,
-  #aventures .block-3 .block-3-1 {
+  #aventures .block-3 .block-3-1,
+  #cadeau .block-3 .block-3-1 {
     border: #3E3535 5px solid;
     border-radius: 5px;
     padding: 2%;
     margin-right: 2%;
   }
   #home .block-3 .block-news,
-  #aventures .block-3 .block-news {
+  #aventures .block-3 .block-news,
+  #cadeau .block-3 .block-news {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
   }
   #home .block-3 .block-news h3,
-  #aventures .block-3 .block-news h3 {
+  #aventures .block-3 .block-news h3,
+  #cadeau .block-3 .block-news h3 {
     padding-left: 1%;
   }
   #home .block-3 .block-news .news-right,
-  #aventures .block-3 .block-news .news-right {
+  #aventures .block-3 .block-news .news-right,
+  #cadeau .block-3 .block-news .news-right {
     margin-left: 6%;
     margin-bottom: 0;
   }
   #home .block-3 .block-news .news-right .button_news,
-  #aventures .block-3 .block-news .news-right .button_news {
+  #aventures .block-3 .block-news .news-right .button_news,
+  #cadeau .block-3 .block-news .news-right .button_news {
     width: 70%;
     margin-left: 0;
     margin-right: auto;
   }
   #home .block-3 .block-news .news-right .button_news .button_plus,
-  #aventures .block-3 .block-news .news-right .button_news .button_plus {
+  #aventures .block-3 .block-news .news-right .button_news .button_plus,
+  #cadeau .block-3 .block-news .news-right .button_news .button_plus {
     margin-top: 8%;
   }
   #home .block-3 .block-news .news-right .button_news .button_plus a,
-  #aventures .block-3 .block-news .news-right .button_news .button_plus a {
+  #aventures .block-3 .block-news .news-right .button_news .button_plus a,
+  #cadeau .block-3 .block-news .news-right .button_news .button_plus a {
     font-size: initial;
   }
   #home .block-3 .block-avis h3,
-  #aventures .block-3 .block-avis h3 {
+  #aventures .block-3 .block-avis h3,
+  #cadeau .block-3 .block-avis h3 {
     padding-left: 1%;
   }
   #home .block-3 .block-avis .block_slider,
-  #aventures .block-3 .block-avis .block_slider {
+  #aventures .block-3 .block-avis .block_slider,
+  #cadeau .block-3 .block-avis .block_slider {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -758,24 +773,28 @@ footer .footer_copyright p {
     margin-left: auto;
   }
   #home .block-3 .block-avis .block_slider .arrow_slider,
-  #aventures .block-3 .block-avis .block_slider .arrow_slider {
+  #aventures .block-3 .block-avis .block_slider .arrow_slider,
+  #cadeau .block-3 .block-avis .block_slider .arrow_slider {
     width: 40px;
     height: 40px;
   }
   #home .block-3 .block-avis .block_slider #slider,
-  #aventures .block-3 .block-avis .block_slider #slider {
+  #aventures .block-3 .block-avis .block_slider #slider,
+  #cadeau .block-3 .block-avis .block_slider #slider {
     width: 45vw;
     overflow: hidden;
   }
   #home .block-3 .block-avis .block_slider #slider .slider-parent,
-  #aventures .block-3 .block-avis .block_slider #slider .slider-parent {
+  #aventures .block-3 .block-avis .block_slider #slider .slider-parent,
+  #cadeau .block-3 .block-avis .block_slider #slider .slider-parent {
     width: 90vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   #home .block-3 .block-avis .block_slider #slider .slider-parent .slide,
-  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide {
+  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide,
+  #cadeau .block-3 .block-avis .block_slider #slider .slider-parent .slide {
     width: 45vw;
     display: -ms-grid;
     display: grid;
@@ -783,36 +802,42 @@ footer .footer_copyright p {
         grid-template-columns: 50% 50%;
   }
   #home .block-3 .block-avis .block_slider #slider .slider-parent .slide .block-reviews-star,
-  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide .block-reviews-star {
+  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide .block-reviews-star,
+  #cadeau .block-3 .block-avis .block_slider #slider .slider-parent .slide .block-reviews-star {
     margin-left: 8%;
     margin-top: 8%;
   }
   #home .block-3 .block-avis .block_slider #slider .slider-parent .slide .desc_reviews,
-  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide .desc_reviews {
+  #aventures .block-3 .block-avis .block_slider #slider .slider-parent .slide .desc_reviews,
+  #cadeau .block-3 .block-avis .block_slider #slider .slider-parent .slide .desc_reviews {
     margin-right: 12%;
   }
   #home .block-3 .block-popular,
-  #aventures .block-3 .block-popular {
+  #aventures .block-3 .block-popular,
+  #cadeau .block-3 .block-popular {
     border: #3E3535 5px solid;
     padding: 2%;
     margin-top: 0;
     margin-bottom: 0;
   }
   #home .block-3 .block-popular .popular-img,
-  #aventures .block-3 .block-popular .popular-img {
+  #aventures .block-3 .block-popular .popular-img,
+  #cadeau .block-3 .block-popular .popular-img {
     display: block;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
   #home .block-3 .block-popular .popular-img img,
-  #aventures .block-3 .block-popular .popular-img img {
+  #aventures .block-3 .block-popular .popular-img img,
+  #cadeau .block-3 .block-popular .popular-img img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   #home .block-3 .block-popular .popular_button,
-  #aventures .block-3 .block-popular .popular_button {
+  #aventures .block-3 .block-popular .popular_button,
+  #cadeau .block-3 .block-popular .popular_button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -821,17 +846,20 @@ footer .footer_copyright p {
             justify-content: center;
   }
   #home .block-3 .block-popular .popular_button .button_plus,
-  #aventures .block-3 .block-popular .popular_button .button_plus {
+  #aventures .block-3 .block-popular .popular_button .button_plus,
+  #cadeau .block-3 .block-popular .popular_button .button_plus {
     margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
   }
   #home .block-3 .block-popular .popular_button .button_plus a,
-  #aventures .block-3 .block-popular .popular_button .button_plus a {
+  #aventures .block-3 .block-popular .popular_button .button_plus a,
+  #cadeau .block-3 .block-popular .popular_button .button_plus a {
     font-size: initial;
   }
   #home .block-4,
-  #aventures .block-4 {
+  #aventures .block-4,
+  #cadeau .block-4 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 52% 48%;
@@ -841,27 +869,32 @@ footer .footer_copyright p {
     padding: 0;
   }
   #home .block-4 h3,
-  #aventures .block-4 h3 {
+  #aventures .block-4 h3,
+  #cadeau .block-4 h3 {
     padding-left: 4%;
   }
   #home .block-4 p,
-  #aventures .block-4 p {
+  #aventures .block-4 p,
+  #cadeau .block-4 p {
     margin-left: 4%;
   }
   #home .block-4 img,
-  #aventures .block-4 img {
+  #aventures .block-4 img,
+  #cadeau .block-4 img {
     width: 90%;
     margin-left: 6%;
     margin-top: 12%;
   }
   #home .block-5,
-  #aventures .block-5 {
+  #aventures .block-5,
+  #cadeau .block-5 {
     margin-bottom: 4% !important;
     margin: 0;
     padding: 0;
   }
   #home .block-5 h3,
-  #aventures .block-5 h3 {
+  #aventures .block-5 h3,
+  #cadeau .block-5 h3 {
     margin-left: 53%;
     text-align: right;
     padding-right: 2%;
@@ -869,19 +902,22 @@ footer .footer_copyright p {
     padding-bottom: 0.5%;
   }
   #home .block-5 .block-5-1,
-  #aventures .block-5 .block-5-1 {
+  #aventures .block-5 .block-5-1,
+  #cadeau .block-5 .block-5-1 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 48% 52%;
         grid-template-columns: 48% 52%;
   }
   #home .block-5 .block-5-1 img,
-  #aventures .block-5 .block-5-1 img {
+  #aventures .block-5 .block-5-1 img,
+  #cadeau .block-5 .block-5-1 img {
     width: 90%;
     margin-left: 4%;
   }
   #home .block-5 .block-5-1 .text-block-team-building,
-  #aventures .block-5 .block-5-1 .text-block-team-building {
+  #aventures .block-5 .block-5-1 .text-block-team-building,
+  #cadeau .block-5 .block-5-1 .text-block-team-building {
     margin-right: 4%;
   }
   #aventures h2 {
