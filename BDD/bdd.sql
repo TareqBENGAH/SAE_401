@@ -3,20 +3,15 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : ven. 10 mars 2023 à 09:28
+-- Généré le : dim. 19 mars 2023 à 18:49
 -- Version du serveur : 5.7.33
 -- Version de PHP : 7.4.27
 
-drop database IF exists `sae_401`;
-create database sae_401;
-use sae_401;
 
-
+drop database IF exists sae_401;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,13 +28,14 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `booking`
 --
-
+CREATE database sae_401;
+USE sae_401;
 CREATE TABLE `booking` (
   `resa_id` int(11) NOT NULL,
   `resa_horaire` int(11) DEFAULT NULL,
   `id_user` int(11) DEFAULT NULL,
   `resa_idgame` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -63,11 +59,11 @@ CREATE TABLE `faq_sujet` (
 
 CREATE TABLE `game` (
   `game_id` int(11) NOT NULL,
-  `game_genre` varchar(50) DEFAULT NULL,
+  `game_genre` enum("drame", 'fantastique', 'suspens') DEFAULT NULL,
   `game_duree` int(11) DEFAULT NULL,
   `game_lieu` varchar(50) DEFAULT NULL,
   `game_id_pack` int(11) DEFAULT NULL,
-  `game_categorie` varchar(50) DEFAULT NULL,
+  `game_categorie` enum("novice", 'amateur', 'expert') DEFAULT NULL,
   `game_nbjoueur` int(11) DEFAULT NULL,
   `game_environnement` varchar(50) DEFAULT NULL,
   `game_nom` varchar(50) DEFAULT NULL,
@@ -75,9 +71,16 @@ CREATE TABLE `game` (
   `game_description` text,
   `game_decriptioneng` text,
   `game_prix` float DEFAULT NULL,
-  `game_parcours`float DEFAULT NULL,
-  `game_nbenigme` tinyint DEFAULT NULL
+  `game_parcours` float DEFAULT NULL,
+  `game_nbenigme` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `game`
+--
+
+INSERT INTO `game` (`game_id`, `game_genre`, `game_duree`, `game_lieu`, `game_id_pack`, `game_categorie`, `game_nbjoueur`, `game_environnement`, `game_nom`, `game_nomeng`, `game_description`, `game_decriptioneng`, `game_prix`, `game_parcours`, `game_nbenigme`) VALUES
+(1, 'test', 1, 'mulhouse ville', NULL, 'expert', 2, 'ville', 'test Anthony n°1', 'Test ANthony ANG n°1', 'en gros je teste pour voir si ca marche ', 'same, i am testing the DB', 2.5, 3.8, 2);
 
 -- --------------------------------------------------------
 
@@ -119,106 +122,6 @@ CREATE TABLE `user` (
   `user_mdp` varchar(50) DEFAULT NULL,
   `user_mail` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-
-CREATE TABLE IF NOT EXISTS transaction (
-    trans_id INT AUTO_INCREMENT,
-    trans_idclient TINYINT,
-    trans_date DATE
-);
-
-CREATE TABLE IF NOT EXISTS ligne_transa (
-    ligne_idtrans VARCHAR(50),
-    ligne_idgame TINYINT,
-    ligne_idquantite INT
-);
---
--- Index pour les tables déchargées
---
-
-ALTER TABLE `transaction`
-  ADD PRIMARY KEY (`id_trans`);
-
-
-ALTER TABLE `ligne`
-  ADD PRIMARY KEY (`trans_id`, `trans_idclient`);
---
--- Index pour la table `booking`
---
-ALTER TABLE `booking`
-  ADD PRIMARY KEY (`resa_id`);
-
---
--- Index pour la table `faq_sujet`
---
-ALTER TABLE `faq_sujet`
-  ADD PRIMARY KEY (`faqsj_idsujet`);
-
---
--- Index pour la table `game`
---
-ALTER TABLE `game`
-  ADD PRIMARY KEY (`game_id`);
-
---
--- Index pour la table `pack`
---
-ALTER TABLE `pack`
-  ADD PRIMARY KEY (`pack_id`);
-
---
--- Index pour la table `review`
---
-ALTER TABLE `review`
-  ADD PRIMARY KEY (`review_id`);
-
---
--- Index pour la table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `booking`
---
-ALTER TABLE `booking`
-  MODIFY `resa_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `faq_sujet`
---
-ALTER TABLE `faq_sujet`
-  MODIFY `faqsj_idsujet` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `game`
---
-ALTER TABLE `game`
-  MODIFY `game_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `pack`
---
-ALTER TABLE `pack`
-  MODIFY `pack_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `review`
---
-ALTER TABLE `review`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `user`
---
-ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

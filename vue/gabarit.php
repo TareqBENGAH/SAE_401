@@ -33,7 +33,7 @@
   </header>
   <main>
     
-    <?php require "vue/vue_aventures.php";?> 
+    <?=$contenu?>
   </main>
   <footer>
     <div class="footer_navigation">

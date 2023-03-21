@@ -2,7 +2,7 @@
 
 class config{
     public const DBHOST ="localhost";
-    public const DBNAME ="401_sae";
+    public const DBNAME ="sae_401";
     public const DBUSER ="root";
     public const DBPWD="";
 

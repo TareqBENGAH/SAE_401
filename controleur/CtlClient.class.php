@@ -1,6 +1,7 @@
 <?php
 
 require_once "vue/vue.class.php";
+require_once "modele/client.class.php";
 
 class ctlClient{
 

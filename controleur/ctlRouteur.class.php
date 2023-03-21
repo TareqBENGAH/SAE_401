@@ -4,39 +4,75 @@
 require "ctlPage.class.php";
 require "ctlClient.class.php";
 require "ctlAventure.class.php";
+require 'ctlCadeaux.class.php';
 
 class ctlRouteur
 {
 
-    private $
+    
+
+
     private $ctlEscGame;
     private $ctlClient;
-    private $ctlResa;
     private $ctlCPage;
+    private $ctlCadeau;
 
+
+
+    //*******
+    //Initialisation des Class Modele pour chaque action
+    //Entrée : 
+    //      [vide]
+    //Sortie : 
+    //      [variables initialisées en tant qu'objet]
+    //******/
     public function __construct()
     {
         $this->ctlClient = new ctlClient();
         $this->ctlEscGame = new ctlAventure();
-        $this->Ctlresa = new CtlResa();
         $this->ctlPage = new ctlPage();
+        $this->ctlCadeau= new ctlCadeau();
     }
 
+
+    //*******
+    //Routage à partir des actions réalisées passées en paramètre dans l'url 
+    //Entrée : 
+    //      [vide]
+    //Sortie : 
+    //      [affichage des pages demandées ou de la page d'accueil]
+    //******/
     public function Routage()
     {
         try {
             if (isset($_GET["action"])) {
                 switch ($_GET["action"]) {
 
+                    //affichage page profil si le client est connecté 
+                    //sinon affichage de la page de connexion/création de compte
+                    case "connexion" : 
+                        // $this->ctlClient->connexion();
+                        break;
+
                     case 'paiement':
+                        return true;
+                        break;
                         
                     case "aventures":
                         // require "vue/vue_aventure.php";
                         $this->ctlEscGame->aventure_list();
                         break;
                     case "cadeaux":
-                        $this
+                        $this->ctlCadeau->cadeau();
                         break;
+
+                    case "aventure":
+                        if(isset($_POST["id_game"])){
+                            $this->ctlEscGame->aventure($_POST["id_game"]);
+                        }
+                        else{
+                            $this->ctrlPage->accueil();///faire la gestion d'erreur avec Zoé
+                        }
                     case "faq":
                         require "vue/vue_faq.php";
                         break;
@@ -56,12 +92,12 @@ class ctlRouteur
                         break;
 
                     default:
-                        require "vue/vue_accueil.php";
+                        $this->ctlPage->accueil();
                         break;
                 }
             } else
                 // require "vue/vue_accueil.php";
-                require "vue/gabarit.php";
+                $this->ctlPage->accueil();
         } catch (Exception $e) {
             echo $e->getMessage();
         }
