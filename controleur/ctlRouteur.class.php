@@ -45,7 +45,15 @@ class ctlRouteur
             if (isset($_GET["action"])) {
                 switch ($_GET["action"]) {
 
+                    //affichage page profil si le client est connecté 
+                    //sinon affichage de la page de connexion/création de compte
+                    case "connexion" : 
+                        // $this->ctlClient->connexion();
+                        break;
+
                     case 'paiement':
+                        return true;
+                        break;
                         
                     case "aventures":
                         // require "vue/vue_aventure.php";
@@ -54,6 +62,14 @@ class ctlRouteur
                     case "cadeaux":
                         
                         break;
+
+                    case "aventure":
+                        if(isset($_POST["id_game"])){
+                            $this->ctlEscGame->aventure($_POST["id_game"]);
+                        }
+                        else{
+                            $this->ctrlPage->accueil();///faire la gestion d'erreur avec Zoé
+                        }
                     case "faq":
                         require "vue/vue_faq.php";
                         break;
@@ -73,12 +89,12 @@ class ctlRouteur
                         break;
 
                     default:
-                        require "vue/vue_accueil.php";
+                        $this->ctlPage->accueil();
                         break;
                 }
             } else
                 // require "vue/vue_accueil.php";
-                require "vue/gabarit.php";
+                $this->ctlPage->accueil();
         } catch (Exception $e) {
             echo $e->getMessage();
         }

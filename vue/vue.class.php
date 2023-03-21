@@ -31,10 +31,10 @@ class vue {
       
   *******************************************************/
   public function afficher($data) {
-    $title = TITREONGLET;
-    $header = NOMSITE;
+    // $title = TITREONGLET;
+    // $header = NOMSITE;
 //    $titre = "";      // Le titre de la page est généré dans le fichierVue
-    $menu = MENU;
+    // $menu = MENU;
 
     extract($data);   // Extrait les valeurs du tableau associatif $data dans des variables
 

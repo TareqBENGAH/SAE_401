@@ -5,7 +5,7 @@ class ctlPage {
     private $page;
 
     public function accueil(){
-        $vue = new vue("Accueil"); // Instancie la vue appropriée
+        $vue = new vue("accueil"); // Instancie la vue appropriée
         $vue->afficher(array()); 
     }
     
