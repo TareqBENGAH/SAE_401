@@ -125,6 +125,18 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 COMMIT;
 
+-- -------------------------------------------------------
+
+-- 
+-- Structure de la table `carte_cadeau`
+-- 
+
+CREATE TABLE  `carte_cadeau`(
+  `carte_id` int(11) PRIMARY KEY,
+  `carte_client_id` int(11) NOT NULL,
+  `carte_value` float NOT NULL,
+)
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

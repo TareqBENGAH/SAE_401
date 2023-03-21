@@ -69,7 +69,7 @@ class ctlRouteur
                         break;
                     
                     case "enregcadeaux":
-                        $this->ctlCadeaux->enregCadeau();
+                        $this->ctlCadeau->enregCadeau();
 
                     //affichage page aventure information avec vérif de l'id du jeu à afficher    
                     case "aventure":
@@ -77,7 +77,7 @@ class ctlRouteur
                             $this->ctlEscGame->aventure($_POST["id_game"]);
                         }
                         else{
-                            $this->ctrlPage->accueil();///faire la gestion d'erreur avec Zoé
+                            $this->ctlPage->accueil();///faire la gestion d'erreur avec Zoé
                         }
                         break;
                        
