@@ -14,7 +14,9 @@ class cadeau extends database {
     Retour : 
         affichage de la page cadeau      
   *******************************************************/
-    
+    public function EnregCadeau($value_cadeau, $id_client){
+      $req="INSERT INTO ";
+    }
 
 
 

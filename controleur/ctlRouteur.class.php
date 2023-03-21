@@ -54,10 +54,12 @@ class ctlRouteur
                         // $this->ctlClient->connexion();
                         break;
 
+                    //affichage page paiement    
                     case 'paiement':
                         return true;
                         break;
                         
+                    //affichage page aventures     
                     case "aventures":
                         // require "vue/vue_aventure.php";
                         $this->ctlEscGame->aventure_list();
@@ -65,7 +67,11 @@ class ctlRouteur
                     case "cadeaux":
                         $this->ctlCadeau->cadeau();
                         break;
+                    
+                    case "enregcadeaux":
+                        $this->ctlCadeaux->enregCadeau();
 
+                    //affichage page aventure information avec vérif de l'id du jeu à afficher    
                     case "aventure":
                         if(isset($_POST["id_game"])){
                             $this->ctlEscGame->aventure($_POST["id_game"]);
@@ -73,11 +79,16 @@ class ctlRouteur
                         else{
                             $this->ctrlPage->accueil();///faire la gestion d'erreur avec Zoé
                         }
+                        break;
+                       
+                    //affichage page faq    
                     case "faq":
                         require "vue/vue_faq.php";
                         break;
+
+                    //affichage page contact 
                     case "contact":
-                        require "vue/vue_contact.php";
+                        $this->ctlPage->contact();
                         break;
                     case "client": //affichage de la page d'infos client
                         // if(isset("connect")){ //vérification si le visiteur est connecté
@@ -96,7 +107,6 @@ class ctlRouteur
                         break;
                 }
             } else
-                // require "vue/vue_accueil.php";
                 $this->ctlPage->accueil();
         } catch (Exception $e) {
             echo $e->getMessage();
