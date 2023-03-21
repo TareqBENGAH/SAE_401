@@ -12,15 +12,14 @@ class CtlAventure{
 
     public function aventure_list(){
         $aventure_total=$this->aventure->getEscGames();
-        var_dump($aventure_total);
         $vue=new vue("aventures");
-        $vue->afficher(array($aventure_total));
+        $vue->afficher(array("infos"=>$aventure_total));
     }
 
     public function aventure($id_game){
         $infos_aventure = $this->aventure->getEscGame($id_game);
         $vue=new vue("aventure");
-        $vue->afficher(array($infos_aventure));
+        $vue->afficher(array("infos"=>$infos_aventure));
     }
 
 

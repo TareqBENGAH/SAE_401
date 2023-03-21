@@ -4,6 +4,7 @@
 require "ctlPage.class.php";
 require "ctlClient.class.php";
 require "ctlAventure.class.php";
+require 'ctlCadeaux.class.php';
 
 class ctlRouteur
 {
@@ -14,6 +15,7 @@ class ctlRouteur
     private $ctlEscGame;
     private $ctlClient;
     private $ctlCPage;
+    private $ctlCadeau;
 
 
 
@@ -29,6 +31,7 @@ class ctlRouteur
         $this->ctlClient = new ctlClient();
         $this->ctlEscGame = new ctlAventure();
         $this->ctlPage = new ctlPage();
+        $this->ctlCadeau= new ctlCadeau();
     }
 
 
@@ -60,7 +63,7 @@ class ctlRouteur
                         $this->ctlEscGame->aventure_list();
                         break;
                     case "cadeaux":
-                        
+                        $this->ctlCadeau->cadeau();
                         break;
 
                     case "aventure":

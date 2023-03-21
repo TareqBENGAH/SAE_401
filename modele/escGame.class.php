@@ -14,7 +14,7 @@ class EscGame extends database {
       [array] : Tableau associatif contenant la liste des clients
   *******************************************************/
   public function getEscGames() {
-     $req = 'SELECT * FROM game;';
+     $req = 'SELECT * FROM `game` ORDER BY `game`.`game_categorie`';
     // $req = 'SELECT id_client AS "N° Client", nom AS "NOM", prenom AS "Prénom" FROM client ORDER BY nom, prenom;';
     $clients = $this->execReq($req);
     
