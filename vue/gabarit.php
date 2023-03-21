@@ -8,7 +8,9 @@
 <body>
   <header>
     <div class="header_logo">
-      <img src="img/header/logo_header.png" alt="Kaiserstuhl escape logo">
+      <a href="index.php">
+        <img src="img/header/logo_header.png" alt="Kaiserstuhl escape logo">
+      </a>
     </div>
     <div class="header-selector">
       <div class="header-langue">

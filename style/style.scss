@@ -49,11 +49,16 @@ header{
     position: fixed;
     .header_logo{
         display: flex;
-        img{
+        a{
+            display: flex;
+            justify-content: center;
             width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+            img{
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        } 
     }
     .header-selector{
         background-color: $gris;
@@ -143,8 +148,7 @@ footer{
     }
 }
 
-#home,
-#cadeau{
+#home{
     padding-top: 12vh;
     h2{
         font-family: $ultra;
@@ -391,6 +395,8 @@ footer{
                 justify-content: center;
                 a{
                     font-size: 48px;
+                    color: white;
+                    text-decoration: none;
                 }
             }
         }
@@ -412,6 +418,45 @@ footer{
     }
 }
 
+#cadeau,
+#contact{
+    padding-top: 12vh;
+    .block-1{
+        margin-bottom: 4vh;
+        img{
+            width: 100%;
+        }
+        .block-cadeau, .block-contact{
+            margin-left: 2%;
+            margin-right: 2%;
+            h1{
+                font-size: 80px;
+            }
+            form{
+                display: grid;
+                label{
+                    font-size: 50px;
+                    margin-bottom: 2%;
+                }
+                input[type=number]{
+                    width: 20vw;
+                    height: 4vh;
+                    font-size: 50px;
+                }
+                input[type=submit]{
+                    width: 90%;
+                    height: 4vh;
+                    font-size: 50px;
+                    border: none;
+                    background-color: $jaune;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
 
 @keyframes slider_animation{
     0%{
@@ -726,6 +771,45 @@ footer{
             div{
                 padding: 7%;
                 margin: 7%;
+            }
+        }
+    }
+
+    #cadeau,
+    #contact{
+        padding-top: 6vh;
+        .block-1{
+            margin-bottom: 4vh;
+            img{
+                width: 100%;
+            }
+            .block-cadeau, .block-contact{
+                margin-left: 2%;
+                margin-right: 2%;
+                h1{
+                    font-size: 80px;
+                }
+                form{
+                    display: grid;
+                    label{
+                        font-size: 30px;
+                        margin-bottom: 2%;
+                    }
+                    input[type=number]{
+                        width: 10vw;
+                        height: 4vh;
+                        font-size: 30px;
+                    }
+                    input[type=submit]{
+                        width: 70%;
+                        height: 6vh;
+                        font-size: 30px;
+                        border: none;
+                        background-color: $jaune;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }
